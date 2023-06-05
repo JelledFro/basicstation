@@ -50,4 +50,5 @@ if [[ ! -d platform-${platform} ]]; then
         echo "Applying ${lgwversion}-${platform}.patch ..."
         git apply ../${lgwversion}-${platform}.patch
     fi
+    cp -rf ../loragw_stts751.c ../libloragw/src/loragw_stts751.c
 fi
